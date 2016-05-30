@@ -1,0 +1,71 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title text
+		include inc/head
+	body(class="p-text")
+		include partials/header
+		
+		+b('section').section
+			.b-container
+				+e('').wrap
+					+e('').text
+						h1 h1 О компании
+						p В 2009 году ООО "Домакс Систем" стало <a href="#" class="link">официальным дилером</a> польской фирмы Domax в Республике Беларусь. За это небольшое количество времени, преодолевая все трудности, небольшая белорусская команда уверенно встала на ноги и с каждым днем развивается все шире по всей территории Беларуси.
+						p Благодаря хорошо продуманной стратегии и индивидуальному подходу к клиентам, дилер фирмы DOMAX завоевал значительную часть местного рынка крепежных изделий и занял лидирующее место среди фирм своей отрасли.Индивидуальный подход является основным направлением нашей работы с партнерами, что в сочетании с профессиональной консультацией и обслуживанием свидетельствует о том, что DOMAX является незаменимым партнером в своей отрасли.
+						p На сегодняшний день DOMAX продает свои изделия более чем в 20 городах по всей стране. Мы сотрудничаем со строительными и торговыми организациями, крупными и мелкими оптовиками, частными предпринимателями, владельцами собственных розничных торговых точек.Выбирая продукцию нашего предприятия, Вы приобретаете не только высококачественный товар,  но и надежного делового партнера.
+						h2 h2 Стили картинок
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis suscipit quis optio quo perferendis quibusdam, hic quidem sed voluptate recusandae fuga harum sint ad nobis veniam minus, voluptas molestias vitae!
+						img(src="http://placehold.it/280x280", alt="")._img-left
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam similique vitae perferendis natus quidem obcaecati quasi quas animi ex iusto impedit numquam dolores a blanditiis, quod fugiat debitis dolorum, atque! Reprehenderit, inventore incidunt neque magnam adipisci vitae, a possimus ab ex optio similique et impedit cupiditate corporis sequi ratione harum delectus error dolor officiis! Qui odit nihil cum. Officia esse ipsa ut rem, officiis. Veritatis non atque unde, corporis aut tenetur harum omnis. Ducimus quis excepturi nam debitis atque unde dolore rem in voluptate, nemo! Obcaecati facilis est corrupti perspiciatis nostrum, dolor, quas cupiditate, beatae necessitatibus consequatur dolores quidem perferendis!
+						img(src="http://placehold.it/280x280", alt="")._img-right
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam expedita id temporibus aperiam facere corporis voluptate, adipisci placeat laboriosam, reiciendis optio velit mollitia itaque sit. Laboriosam, molestias, saepe. Obcaecati, mollitia.
+						p Княгиня Мария Николаевна Волконская (урождённая Раевская; 25 декабря 1805 (6 января 1806) — 10 августа 1863, поместье Воронки, Черниговская губерния, Российская империя) — дочь героя Отечественной войны 1812 года генерала Николая Раевского. В январе 1825 года вышла замуж за будущего декабриста Сергея Волконского.
+						h3 h3 Остальное
+						p В 1826 году, несмотря на сопротивление родных, оставив годовалого сына, уехала в Сибирь вслед за сосланным мужем. В Иркутске она подписала «Условия», разработанные для жён декабристов. Как считает биограф Марии Волконской Филин, её приезд спас мужа: к тому времени он был болен и совершенно пал духом. 
+						table
+							tr
+								th Параметр
+								th Параметр
+								th Параметр
+								th Параметр
+							tr
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+							tr
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+							tr
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+								td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vitae!
+						h1 Заголовок 1
+						h2 Заголовок 2
+						h3 Заголовок 3
+						h4 Заголовок 4
+						h5 Заголовок 5
+						ul
+							li Список
+							li Список
+							li Список
+							li Список
+							li Список
+						ol
+							li Нумерованный список
+							li Нумерованный список
+							li Нумерованный список
+							li Нумерованный список
+							li Нумерованный список
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

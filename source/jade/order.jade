@@ -1,0 +1,139 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title order
+		include inc/head
+	body(class="p-order")
+		include partials/header
+
+		+b('section').order
+			.b-container
+				+e('').wrap
+					+e('').order-wrap
+						+b('span').title Оформление заказа
+						+e('').text
+							p В 2009 году ООО "Домакс Систем" стало официальным дилером польской фирмы Domax в Республике Беларусь. За это небольшое количество времени, преодолевая все трудности, небольшая белорусская команда уверенно встала на ноги и с каждым днем развивается все шире по всей территории Беларуси
+						+b('').tabs
+							+e('').wrap
+								+e('').item
+									+e('span').text Физ лицо
+								+e('').item.active
+									+e('span').text Организация
+						+e('').tab
+							+b('span').title-middle Представтесь пожалуйста
+							+e('').cols-wrap
+								+e('').col
+									+e('span').name Ваше имя<span>*</span>
+									+b('input')(type="text" placeholder="Пример: Василиса").input
+								+e('').col
+									+e('span').name Фамилия
+									+b('input')(type="text" placeholder="Не обязательно").input
+								+e('').col
+									+e('span').name Контактный телефон<span>*</span>
+									+b('input')(type="text" placeholder="Пример: +3752955555555").input
+								+e('').col
+									+e('span').name Адрес электронной почты
+									+b('input')(type="text" placeholder="Не обязательно").input
+							+b('span').title-middle Информация об организации
+							+e('').cols-wrap
+								+e('').col
+									+e('span').name Название<span>*</span>
+									+b('input')(type="text" placeholder="Юридическое название организации").input
+								+e('').col
+									+e('span').name Фамилия<span>*</span>
+									+b('input')(type="text" placeholder="Пример: ООО, ЧУП").input
+								+e('').col
+									+e('span').name Имя<span>*</span>
+									+b('input')(type="text" placeholder="Улица").input
+								+e('').col.hide
+									+e('span').name Фамилия<span>*</span>
+									+b('input')(type="text" placeholder="Улица").input
+							+b('span').title-middle.hide Адрес доставки
+							+e('').cols-wrap
+								+e('').col
+									+e('span').name Имя<span>*</span>
+									+b('input')(type="text" placeholder="Улица").input
+								+e('').col
+									+e('').item-wrap
+										+e('').item
+											+e('span').name Имя<span>*</span>
+											+b('input')(type="text" placeholder="Улица").input
+										+e('').item
+											+e('span').name Имя<span>*</span>
+											+b('input')(type="text" placeholder="Улица").input
+										+e('').item
+											+e('span').name Имя<span>*</span>
+											+b('input')(type="text" placeholder="Улица").input
+							+b('span').title-middle Дополнительная информация
+							textarea.b-textarea(rows="3" placeholder="Комментарий к заказу: набрать за час до приезда, доставить с 14:00 до 16:00 и т.д.")
+							+e('').send-wrap
+								+e('').left
+									+e('a')(href="#").back Назад к списку покупок
+								+e('').right
+									+b('input')(type="submit" value="Отправить заказ").btn.send
+						+e('').tab.active
+							+b('span').title-middle Представтесь пожалуйста
+							+e('').cols-wrap
+								+e('').col
+									+e('span').name Ваше имя<span>*</span>
+									+b('input')(type="text" placeholder="Пример: Василиса").input
+								+e('').col
+									+e('span').name Фамилия
+									+b('input')(type="text" placeholder="Не обязательно").input
+								+e('').col
+									+e('span').name Контактный телефон<span>*</span>
+									+b('input')(type="text" placeholder="Пример: +3752955555555").input
+								+e('').col.hide
+									+e('span').name Адрес электронной почты
+									+b('input')(type="text" placeholder="Не обязательно").input
+							+b('span').title-middle Информация об организации
+							+e('').cols-wrap
+								+e('').col
+									+e('span').name Название<span>*</span>
+									+b('input')(type="text" placeholder="Юридическое название организации").input
+								+e('').col
+									+e('span').name Фамилия<span>*</span>
+									+b('input')(type="text" placeholder="Пример: ООО, ЧУП").input
+								+e('').col
+									+e('span').name Имя<span>*</span>
+									+b('input')(type="text" placeholder="Улица").input
+								+e('').col.hide
+									+e('span').name Фамилия<span>*</span>
+									+b('input')(type="text" placeholder="Улица").input
+							+b('').selecting
+								+e('input')(type="file" id="avatar" name="avatar").native
+								+e('span').btn Прикрепить файл (реквизиты)
+								+e('span')(id="filename").filename
+							+b('span').title-middle.hide Адрес доставки
+							+e('').cols-wrap
+								+e('').col
+									+e('span').name Имя<span>*</span>
+									+b('input')(type="text" placeholder="Улица").input
+								+e('').col
+									+e('').item-wrap
+										+e('').item
+											+e('span').name Имя<span>*</span>
+											+b('input')(type="text" placeholder="Улица").input
+										+e('').item
+											+e('span').name Имя<span>*</span>
+											+b('input')(type="text" placeholder="Улица").input
+										+e('').item
+											+e('span').name Имя<span>*</span>
+											+b('input')(type="text" placeholder="Улица").input
+							+b('span').title-middle Дополнительная информация
+							+e('').textarea
+								textarea.b-textarea(rows="4" placeholder="Комментарий к заказу: набрать за час до приезда, доставить с 14:00 до 16:00 и т.д.")
+							+e('').send-wrap
+								+e('').right
+									+b('input')(type="submit" value="Отправить заказ").btn.send
+								+e('').left
+									+e('a')(href="#").back Назад к списку покупок
+
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

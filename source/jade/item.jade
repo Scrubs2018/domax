@@ -1,0 +1,235 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title item
+		include inc/head
+	body(class="p-item")
+		include partials/header
+		
+		+b('').item
+			.b-container
+				+e('').wrap
+					+b('').crumbs
+						+e('a')(href="#").item Главная
+						+e('a')(href="#").item Крепежи
+						+e('span').item Уголки
+					+b('span').title KM - уголок монтажный усиленный
+					+e('').image-wrap.mobile
+						+e('img')(src="http://placehold.it/100x100").img
+						+e('img')(src="http://placehold.it/100x100").img
+						+e('img')(src="http://placehold.it/100x100").img
+						+e('img')(src="http://placehold.it/100x100").img
+					+b('').slider-mobile.owl-carousel
+						+e('').slide
+							+e('img')(src="http://placehold.it/100x100").img
+						+e('').slide
+							+e('img')(src="http://placehold.it/100x100").img
+						+e('').slide
+							+e('img')(src="http://placehold.it/100x100").img
+						+e('').slide
+							+e('img')(src="http://placehold.it/100x100").img
+					+e('table').table
+						+e('tr').tr
+							+e('th').th
+							+e('th').th Товар
+							+e('th').th Артикул
+							+e('th').th.show
+							+e('th')(class="hide").th.hide А, мм
+							+e('th')(class="hide").th.hide B, мм
+							+e('th')(class="hide").th.hide С, мм
+							+e('th')(class="hide").th.hide Антикорроз.<br>защита
+							+e('th')(class="hide").th.hide Несущая<br>способность
+							+e('th')(class="hide").th.hide Вес, кг
+							+e('th')(class="hide").th.hide Упаковка
+							+e('th').th Цена, шт.
+							+e('th').th.gray Количество
+							+e('th').th.gray Итого
+							+e('th').th.gray Заказать
+						+e('tr').tr
+							+e('td').td
+								+e('img')(src="http://placehold.it/20x20").img
+							+e('td').td.black КМ 1
+							+e('td').td 42569
+							+e('td').th.show Размеры и описание
+								+b('').description
+									+e('').item
+										+e('span').left А,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left B,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left C,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left Антикорроз.<br>защита
+										+e('span').right 40
+									+e('').item
+										+e('span').left Несущ.<br>способность
+										+e('span').right 40
+									+e('').item
+										+e('span').left Вес,кг
+										+e('span').right 40
+									+e('').item
+										+e('span').left Упаковка,шт
+										+e('span').right 40
+							+e('td')(class="hide").td.hide 40
+							+e('td')(class="hide").td.hide 40
+							+e('td')(class="hide").td.hide 40
+							+e('td')(class="hide").td.hide Z275
+							+e('td')(class="hide").td.hide 3.81
+							+e('td')(class="hide").td.hide 0.045
+							+e('td')(class="hide").td.hide 10 шт
+							+e('td').td.black 7 800 руб.
+							+e('td').td.gray
+								+b('').number.active
+									+e('span').less.active
+									+e('input')(type="text" placeholder="1").input.active
+									+e('span').more.active
+							+e('td').td.gray
+								+e('span').item 200 000
+							+e('td').td.gray
+								+b('a')(href="#").basket-item
+						+e('tr').tr
+							+e('td').td
+								+e('img')(src="http://placehold.it/20x20").img
+							+e('td').td.black КМ 1
+							+e('td').td 42569
+							+e('td').th.show Размеры и описание
+								+b('').description
+									+e('').item
+										+e('span').left А,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left B,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left C,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left Антикорроз.<br>защита
+										+e('span').right 40
+									+e('').item
+										+e('span').left Несущ.<br>способность
+										+e('span').right 40
+									+e('').item
+										+e('span').left Вес,кг
+										+e('span').right 40
+									+e('').item
+										+e('span').left Упаковка,шт
+										+e('span').right 40
+							+e('td')(class="hide").td.hide 40
+							+e('td')(class="hide").td.hide 40
+							+e('td')(class="hide").td.hide 40
+							+e('td')(class="hide").td.hide Z275
+							+e('td')(class="hide").td.hide 3.81
+							+e('td')(class="hide").td.hide 0.045
+							+e('td')(class="hide").td.hide 10 шт
+							+e('td').td.black 7 800 руб.
+							+e('td').td.gray
+								+b('').number.active
+									+e('span').less.active
+									+e('input')(type="text" placeholder="1").input.active
+									+e('span').more.active
+							+e('td').td.gray
+								+e('span').item 200 000
+								+e('span').cross 400 000
+							+e('td').td.gray
+								+b('a')(href="#").basket-item
+					+e('').text.hide
+						p Если вам предстоит заниматься фиксацией конструкций разной степени сложности, то без надёжных метизов сложно будет обойтись. К их выбору и покупке следует подходить осознанно, так как от качества изделий зависит долговечность готовой конструкции. Советуем вам погружаться в мир крепёжных изделий вместе с компанией «ВиСМа-строй». 
+						p Изделия для крепежа представляют собой металлические детали, которые необходимы для различного рода соединений: разъёмных либо неразъёмных. Первые выполняются, как правило, с использованием винтов, болтов, гаек либо шпилек, а вторые - с применением пайки, сварки либо склеивания.
+						p На страницах нашего сайта вы сможете ознакомиться с различными крепежами, здесь представлены как универсальные модели, так и специализированные метизы. Это и дюбель гвозди, и саморезы, и шурупы, и гайки, и болты, и т.д. В зависимости от целей и перечня работ, который предстоит выполнить, нужно выбирать различные крепёжные изделия. Для установки плинтуса и крепления деревянных конструкций можно применять гвозди.
+					+b('span').title.no-upper.hide Смотрите также
+					+b('').all-product.hide
+						+e('').cols-wrap
+							+e('').col
+								+product
+							+e('').col
+								+product
+							+e('').col
+								+product
+							+e('').col
+								+product
+							+e('').col
+								+product
+				+e('').mobile
+					+e('').product
+						+e('span').title КМ 1
+						+e('').right-a
+							+e('').about Размеры и описание
+								+b('').description.mobile
+									+e('').item
+										+e('span').left А,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left B,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left C,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left Антикорроз.<br>защита
+										+e('span').right 40
+									+e('').item
+										+e('span').left Несущ.<br>способность
+										+e('span').right 40
+									+e('').item
+										+e('span').left Вес,кг
+										+e('span').right 40
+									+e('').item
+										+e('span').left Упаковка,шт
+										+e('span').right 40
+					+e('').order
+						+e('').left
+							+b('').number
+								+e('span').less
+								+e('input')(type="text" placeholder="1").input
+								+e('span').more
+						+e('span').middle 120 000
+						+e('').right
+							+b('').basket-item.mobile
+					+e('').product
+						+e('span').title КМ 2
+						+e('').right-a
+							+e('').about Размеры и описание
+								+b('').description.mobile
+									+e('').item
+										+e('span').left А,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left B,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left C,мм
+										+e('span').right 40
+									+e('').item
+										+e('span').left Антикорроз.<br>защита
+										+e('span').right 40
+									+e('').item
+										+e('span').left Несущ.<br>способность
+										+e('span').right 40
+									+e('').item
+										+e('span').left Вес,кг
+										+e('span').right 40
+									+e('').item
+										+e('span').left Упаковка,шт
+										+e('span').right 40
+					+e('').order
+						+e('').left
+							+b('').number
+								+e('span').less
+								+e('input')(type="text" placeholder="1").input
+								+e('span').more
+						+e('span').middle 120 000
+						+e('').right
+							+b('').basket-item.mobile
+
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

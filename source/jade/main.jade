@@ -1,0 +1,97 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title main
+		include inc/head
+	body(class="p-main")
+		include partials/header
+		
+		+b('').main
+			.b-container
+				+e('').wrap
+					+e('').col
+						+e('').wrap-a
+							+e('a')(href="#").title._bottom Крепежи и шурупы
+						+e('').content-wrap
+							+e('a')(href="#").item.top
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.middle-top
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.middle
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.middle-bottom
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.bottom
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+					+e('').col.show
+						+e('').wrap-a
+							+e('a')(href="#").title._bottom Крепежи и шурупы
+						+e('')(id="content").content-wrap
+							+e('a')(href="#").item.top
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.middle-top
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.middle
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.middle-bottom
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.bottom
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.bottom
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.bottom
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.bottom
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+					+e('').col
+						+e('').wrap-a
+							+e('a')(href="#").title._bottom Крепежи и шурупы
+						+e('').content-wrap
+							+e('a')(href="#").item.top
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.middle-top
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.middle
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.middle-bottom
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+							+e('a')(href="#").item.bottom
+								+e('').item-wrap
+									+e('span').title.center Крепежи и шурупы
+				+e('').row-wrap
+					+e('a')(href="#").row
+						+e('img')(src="http://placehold.it/750x350").img
+						+e('span').title-a Вешалки
+					+e('a')(href="#").row
+						+e('img')(src="http://placehold.it/750x350").img
+						+e('span').title-a Вешалки
+					+e('a')(href="#").row
+						+e('img')(src="http://placehold.it/750x350").img
+						+e('span').title-a Вешалки
+
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

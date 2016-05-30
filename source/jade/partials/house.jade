@@ -1,0 +1,945 @@
+.row.domek
+  span.select-detail(style='display: none;')
+  .large-12.columns
+    .inner
+      .mainimg(style='opacity: 1;')
+        img.main(alt='', src='/img/dmx/main.jpg', usemap='#map', style='opacity: 1;')
+        map#maparea(name='map')
+          area(shape='poly', coords='372,188,301,203,302,258,377,285,449,257,445,206', alt='terrace', target='terrace', nohref='nohref', data-details='.terrace', data-element='11')
+          area(shape='poly', coords='634,171,578,253,578,293,645,313,738,274,737,230,692,180,634,172', alt='carport', target='carport', nohref='nohref', data-details='.carport', data-element='12')
+          area(shape='poly', coords='368,185,453,206,453,260,576,296,577,245,634,168,689,177,627,109,483,84,483,75,464,76,464,81,445,78,447,78', data-details='.house', data-element='1')
+          area(shape='poly', coords='300,236,300,184,30,241,37,273,75,289', alt='pergola', target='pergola', nohref='nohref', data-details='.pergola', data-element='9')
+          area(shape='poly', coords='123,283,129,317,252,378,294,367,293,357,307,352,302,295,214,258,210,258', alt='gazebo', target='gazebo', nohref='nohref', data-details='.gazebo', data-element='2')
+          area(shape='poly', coords='295,358,295,384,318,412,340,422,408,455,429,444,400,415,413,411,405,319,357,301,308,317,311,352,312,352', alt='children_house', target='children_house', nohref='nohref', data-details='.children-house', data-element='3')
+          area(shape='poly', coords='431,466,489,438,494,421,552,448,547,465,548,474,491,501,491,498', alt='sandpit', target='sandpit', nohref='nohref', data-details='.sandpit', data-element='10')
+          area(shape='poly', coords='612,556,615,486,600,485,596,471,628,465,632,469,723,461,726,456,738,459,753,461,752,471,737,476,731,533,736,564,725,566,721,555,634,564,634,570,611,561,616,562', alt='swing', target='swing', nohref='nohref', data-details='.swing', data-element='7')
+          area(shape='poly', coords='822,255,812,371,737,352,741,293,743,296', alt='woodshed', target='woodshed', nohref='nohref', data-details='.woodshed', data-element='4')
+          area(shape='poly', coords='824,251,837,244,960,192,1047,283,1018,301,1015,324,1031,332,918,405,814,371', alt='garage', target='garage', nohref='nohref', data-details='.garage', data-element='6')
+          area(shape='poly', coords='738,220,831,241,844,215,736,191,737,211', alt='wicket_with_gate', target='wicket_with_gate', nohref='nohref', data-details='.wicket-with-gate', data-element='5')
+          area(shape='poly', coords='632,371,663,374,664,399,649,443,609,437,612,415,630,367,632,369', alt='bridge', target='bridge', nohref='nohref', data-details='.bridge', data-element='8')
+        .overlay
+          img(src='/img/dmx/house.png', data-element='1', style='display: none;')
+          img(src='/img/dmx/gazebo.png', data-element='2')
+          img(src='/img/dmx/children_house.png', data-element='3')
+          img(src='/img/dmx/woodshed.png', data-element='4', style='display: none;')
+          img(src='/img/dmx/wicket_with_gate.png', data-element='5', style='display: none;')
+          img(src='/img/dmx/garage.png', data-element='6', style='display: none;')
+          img(src='/img/dmx/swing.png', data-element='7')
+          img(src='/img/dmx/bridge.png', data-element='8')
+          img(src='/img/dmx/pergola.png', data-element='9', style='display: none;')
+          img(src='/img/dmx/sandpit.png', data-element='10')
+          img(src='/img/dmx/terrace.png', data-element='11', style='display: none;')
+          img(src='/img/dmx/carport.png', data-element='12', style='display: none;')
+        .element.p1(data-element='1', style='opacity: 0.75;')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-315
+                .yellow-circle
+          .miniature(data-details='.house', data-zoom-x='45', data-zoom-y='20')
+            .text(data-details='.house', data-zoom-x='45', data-zoom-y='20')
+              | ДОМ
+        .element.p2(data-element='2')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-225
+                .yellow-circle
+          .miniature(data-details='.gazebo', data-zoom-x='5', data-zoom-y='45')
+            .text.bottom-line(data-details='.gazebo', data-zoom-x='5', data-zoom-y='45') АЛЬТАНКА
+        .element.p3(data-element='3')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-225
+                .yellow-circle
+          .miniature(data-details='.children-house', data-zoom-x='25', data-zoom-y='50')
+            .text.bottom-line(data-details='.children-house', data-zoom-x='25', data-zoom-y='50') ДОМИК ДЛЯ ДЕТЕЙ
+        .element.p4(data-element='4', style='opacity: 0.75;')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-135
+                .yellow-circle
+          .miniature(data-details='.woodshed', data-zoom-x='70', data-zoom-y='42')
+            .text.bottom-line(data-details='.woodshed', data-zoom-x='70', data-zoom-y='42') САРАЙ
+        .element.p5(data-element='5', style='opacity: 0.75;')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-45
+                .yellow-circle
+          .miniature(data-details='.wicket-with-gate', data-zoom-x='70', data-zoom-y='27')
+            .text(data-details='.wicket-with-gate', data-zoom-x='70', data-zoom-y='27') ВОРОТА С КАЛИТКОЙ
+        .element.p6(data-element='6', style='opacity: 0.75;')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-45
+                .yellow-circle
+          .miniature(data-details='.garage', data-zoom-x='85', data-zoom-y='38')
+            .text(data-details='.garage', data-zoom-x='85', data-zoom-y='38') ГАРАЖ
+        .element.p7(data-element='7')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-135
+                .yellow-circle
+          .miniature(data-details='.swing', data-zoom-x='62', data-zoom-y='85')
+            .text.bottom-line(data-details='.swing', data-zoom-x='62', data-zoom-y='85') КАЧЕЛИ
+        .element.p8(data-element='8')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-315
+                .yellow-line.third-line.horizontal-line
+                  .yellow-circle
+          .miniature(data-details='.bridge', data-zoom-x='57', data-zoom-y='60')
+            .text.bottom-line(data-details='.bridge', data-zoom-x='57', data-zoom-y='60') МОСТИК
+        .element.p9(data-element='9', style='opacity: 0.75;')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-315
+                .yellow-circle
+          .miniature(data-details='.pergola', data-zoom-x='15', data-zoom-y='30')
+            .text(data-details='.pergola', data-zoom-x='15', data-zoom-y='30') БЕСЕДКА
+        .element.p10(data-element='10')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-225
+                .yellow-circle
+          .miniature(data-details='.sandpit', data-zoom-x='40', data-zoom-y='70')
+            .text.bottom-line(data-details='.sandpit', data-zoom-x='40', data-zoom-y='70') ПЕСОЧНИЦА
+        .element.p11(data-element='11', style='opacity: 0.75;')
+          .pointer
+            .yellow-line.first-line
+              .yellow-line.second-line.rotate-315
+                .yellow-circle
+          .miniature(data-details='.terrace', data-zoom-x='25', data-zoom-y='25')
+            .text(data-details='.terrace', data-zoom-x='25', data-zoom-y='25') ТЕРРАСА
+        .element.p12(data-element='12', style='opacity: 0.75;')
+          .pointer
+            .yellow-line.first-line.horizontal-line
+              .yellow-circle
+          .miniature(data-details='.carport', data-zoom-x='55', data-zoom-y='35')
+            .text(data-details='.carport', data-zoom-x='55', data-zoom-y='35') НАВЕС
+      .house
+        img(width='800', alt='', src='/img/dmx/house.jpg')
+        .elem.p1(data-element='1')
+          a(href='/ru/produkty/ru/kategoria/laczniki-specjalne/grupa/sk/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SK_1f56e347f0.png', width='80', height='65', alt='')
+            .text SK
+        .elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDP_A_d9d358ce54.png', width='80', height='65', alt='')
+            .text SDP
+        .elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdlpb/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDLPB_4e1f75498e.png', width='80', height='65', alt='')
+            .text SDLPB
+        .elem.p6(data-element='6')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/klr/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_KLR_ba98f66855.png', width='80', height='65', alt='')
+            .text KLR
+        .elem.p7(data-element='7')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/kp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_KP_3b8a09206f.png', width='80', height='65', alt='')
+            .text KP
+        .right.elem.p8(data-element='8')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/kk/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-line.third-line.vertical-line
+                    .yellow-circle
+            .text KK
+            .icon
+              img(src='/img/dmx/csm_KK_2d564380a7.png', width='80', height='65', alt='')
+        .right.elem.p9(data-element='9')
+          a(href='/ru/produkty/ru/kategoria/laczniki-specjalne/grupa/lk/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text LK
+            .icon
+              img(src='/img/dmx/csm_LK_9710d9d1b0.png', width='80', height='65', alt='')
+        .right.elem.p10(data-element='10')
+          a(href='/ru/produkty/ru/kategoria/laczniki-plaskie/grupa/pp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text PP
+            .icon
+              img(src='/img/dmx/csm_PP_fa60f19c19.png', width='80', height='65', alt='')
+        .right.elem.p11(data-element='11')
+          a(href='/ru/produkty/ru/kategoria/wkrety-ciesielskie-gwozdzie/grupa/ct/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text CT
+            .icon
+              img(src='/img/dmx/csm_CT_dcac289207.png', width='80', height='65', alt='')
+        .elem.p12(data-element='12')
+          a(href='/ru/produkty/ru/kategoria/laczniki-specjalne/grupa/kkb/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_KKB_1f7ba4aae2.png', width='80', height='65', alt='')
+            .text KKB
+        .elem.p13(data-element='13')
+          a(href='/ru/produkty/ru/kategoria/wieszaki-belek/grupa/wb/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_WB_9a3dfdf03b.png', width='80', height='65', alt='')
+            .text WB
+        .right.elem.p14(data-element='14')
+          a(href='/ru/produkty/ru/kategoria/tasmy-montazowe/grupa/tm/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text TM
+            .icon
+              img(src='/img/dmx/csm_TM_8773b2c567.png', width='80', height='65', alt='')
+        .right.elem.p15(data-element='15')
+          a(href='/ru/produkty/ru/kategoria/tasmy-montazowe/grupa/nt/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text NT
+            .icon
+              img(src='/img/dmx/csm_NT_b2347b3fd2.png', width='80', height='65', alt='')
+        .right.elem.p16(data-element='16')
+          a(href='/ru/produkty/ru/kategoria/laczniki-specjalne/grupa/pd/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text PD
+            .icon
+              img(src='/img/dmx/csm_PD_fb90a1785e.png', width='80', height='65', alt='')
+      .gazebo
+        img(width='800', alt='', src='/img/dmx/gazebo.jpg')
+        .elem.p1(data-element='1')
+          a(href='/ru/produkty/ru/kategoria/wkrety-ciesielskie-gwozdzie/grupa/ct/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_CT_dcac289207.png', width='80', height='65', alt='')
+            .text CT
+        .elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/psru/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_PSRU_49f80c36a7.png', width='80', height='65', alt='')
+            .text PSRU
+        .elem.p3(data-element='3')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/psr/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_PSR_fccfedd482.png', width='80', height='65', alt='')
+            .text PSR
+        .right.elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/ps/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text PS
+            .icon
+              img(src='/img/dmx/csm_PS_4b361e91b3.png', width='80', height='65', alt='')
+        .right.elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/psw/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text PSW
+            .icon
+              img(src='/img/dmx/csm_PSW_d450a3ad94.png', width='80', height='65', alt='')
+      .terrace
+        img(width='800', alt='', src='/img/dmx/terrace.jpg')
+        .elem.p1(data-element='1')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdlpb/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDLPB_4e1f75498e.png', width='80', height='65', alt='')
+            .text SDLPB
+        .right.elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdswbz/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text SDSWBZ
+            .icon
+              img(src='/img/dmx/csm_SDSWBZ_b700a0b1cc.png', width='80', height='65', alt='')
+        .right.elem.p3(data-element='3')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdskw/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text SDSKW
+            .icon
+              img(src='/img/dmx/csm_SDSKW_f97c0f8629.png', width='80', height='65', alt='')
+        .elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdskt/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDSKT_6e2c65a9a6.png', width='80', height='65', alt='')
+            .text SDSKT
+        .right.elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdskp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text SDSKP
+            .icon
+              img(src='/img/dmx/csm_SDSKP_a82bc590fe.png', width='80', height='65', alt='')
+        .elem.p6(data-element='6')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdsp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDSP_B_636c401e93.png', width='80', height='65', alt='')
+            .text SDSP
+        .elem.p7(data-element='7')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDP_B_e1eaf6faca.png', width='80', height='65', alt='')
+            .text SDP
+      .pergola
+        img(width='800', alt='', src='/img/dmx/pergola.jpg')
+        .elem.p1.right(data-element='1')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/ks/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text KS
+            .icon
+              img(src='/img/dmx/csm_KS_d72b3a9d22.png', width='80', height='65', alt='')
+        .elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/kw/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_KW_988af314eb.png', width='80', height='65', alt='')
+            .text KW
+        .elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/klr/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_KLR_ba98f66855.png', width='80', height='65', alt='')
+            .text KLR
+        .elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/okucia-ogrodowe/grupa/op/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_OP_c59fac42dc.png', width='80', height='65', alt='')
+            .text OP
+        .elem.p6.right(data-element='6')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/psg/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text PSG
+            .icon
+              img(src='/img/dmx/csm_PSG_fe4aa5dd4e.png', width='80', height='65', alt='')
+      .children-house
+        img(width='800', alt='', src='/img/dmx/children_house.jpg')
+        .elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/km/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_KM_7066085d54.png', width='80', height='65', alt='')
+            .text KM
+        .right.elem.p3(data-element='3')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/kp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text KP
+            .icon
+              img(src='/img/dmx/csm_KP_3b8a09206f.png', width='80', height='65', alt='')
+        .right.elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/kpl/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text KPL
+            .icon
+              img(src='/img/dmx/csm_KPL_75d3b59a44.png', width='80', height='65', alt='')
+        .elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/wkrety-ciesielskie-gwozdzie/grupa/ct/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_CT_dcac289207.png', width='80', height='65', alt='')
+            .text CT
+        .elem.p6(data-element='6')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/psg/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_PSG_fe4aa5dd4e.png', width='80', height='65', alt='')
+            .text PSG
+      .sandpit
+        img(width='800', alt='', src='/img/dmx/sandpit.jpg')
+        .elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/zawiasy/grupa/zo/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_ZO_13d3560915.png', width='80', height='65', alt='')
+            .text ZO
+        .elem.p1(data-element='1')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdkl/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDKL_3621950c9b.png', width='80', height='65', alt='')
+            .text SDKL
+        .elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/wkrety-ciesielskie-gwozdzie/grupa/sdcs/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDCS_2986dab33d.png', width='80', height='65', alt='')
+            .text SDCS
+        .right.elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/okucia-ogrodowe/grupa/un/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text UN
+            .icon
+              img(src='/img/dmx/csm_UN_3d2703a6ff.png', width='80', height='65', alt='')
+        .right.elem.p3(data-element='3')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdd/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text SDD
+            .icon
+              img(src='/img/dmx/csm_SDD_dafc4a1059.png', width='80', height='65', alt='')
+      .bridge
+        img(width='800', alt='', src='/img/dmx/bridge.jpg')
+        .elem.p1(data-element='1')
+          a(href='/ru/produkty/ru/kategoria/wkrety-ciesielskie-gwozdzie/grupa/cs/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_CS_4072b36af0.png', width='80', height='65', alt='')
+            .text CS
+        .right.elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/okucia-ogrodowe/grupa/lbo/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text LBO
+            .icon
+              img(src='/img/dmx/csm_LBO1_b4b50aa306.png', width='80', height='65', alt='')
+        .elem.p3(data-element='3')
+          a(href='/ru/produkty/ru/kategoria/okucia-ogrodowe/grupa/lbo/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_LBO2_9d6bdb87cf.png', width='80', height='65', alt='')
+            .text LBO
+        .right.elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/okucia-ogrodowe/grupa/lbo/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text LBO
+            .icon
+              img(src='/img/dmx/csm_LBO3_b8f1e8fad4.png', width='80', height='65', alt='')
+      .swing
+        img(width='800', alt='', src='/img/dmx/swing.jpg')
+        .elem.p1(data-element='1')
+          a(href='/ru/produkty/ru/kategoria/mocowania-hustawki/grupa/mhd/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_MHD_a1c542a390.png', width='80', height='65', alt='')
+            .text MHD
+        .elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/liny-sznury-lancuchy/grupa/xlg/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_XLG_4ecff37abe.png', width='80', height='65', alt='')
+            .text XLG
+        .elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/wkrety-ciesielskie-gwozdzie/grupa/ct/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_CT_dcac289207.png', width='80', height='65', alt='')
+            .text CT
+        .elem.p7(data-element='7')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/psw/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_PSW_d450a3ad94.png', width='80', height='65', alt='')
+            .text PSW
+        .right.elem.p3(data-element='3')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdskp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text SDSKP
+            .icon
+              img(src='/img/dmx/csm_SDSKP_a82bc590fe.png', width='80', height='65', alt='')
+        .right.elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/liny-sznury-lancuchy/grupa/xos/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text XOS
+            .icon
+              img(src='/img/dmx/csm_XOS_96ca9a8217.png', width='80', height='65', alt='')
+        .right.elem.p6(data-element='6')
+          a(href='/ru/produkty/ru/kategoria/liny-sznury-lancuchy/grupa/xkr/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text XKR
+            .icon
+              img(src='/img/dmx/csm_XKR_b583cbeeb5.png', width='80', height='65', alt='')
+        .right.elem.p8(data-element='8')
+          a(href='/ru/produkty/ru/kategoria/okucia-ogrodowe/grupa/kwz/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text KWZ
+            .icon
+              img(src='/img/dmx/csm_KWZ_96edecdaa1.png', width='80', height='65', alt='')
+      .woodshed
+        img(width='800', alt='', src='/img/dmx/woodshed.jpg')
+        .elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdlpa/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDLPA_871c77961b.png', width='80', height='65', alt='')
+            .text SDLPA
+        .elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdlpb/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDLPB_4e1f75498e.png', width='80', height='65', alt='')
+            .text SDLPB
+        .elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdslp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDSLP_73b4a01b7d.png', width='80', height='65', alt='')
+            .text SDSLP
+        .elem.p1(data-element='1')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdklr/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDKLR_60f11d3ba7.png', width='80', height='65', alt='')
+            .text SDKLR
+        .elem.p3(data-element='3')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdsp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDSP_prosta_a330ee3915.png', width='40', height='54', alt='')
+            .text SDSP
+        .elem.p7(data-element='7')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/psp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_PSP_2e26355abc.png', width='80', height='65', alt='')
+            .text PSP
+        .right.elem.p6(data-element='6')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/km/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text KM
+            .icon
+              img(src='/img/dmx/csm_KM_7066085d54.png', width='80', height='65', alt='')
+        .right.elem.p11(data-element='11')
+          a(href='/ru/produkty/ru/kategoria/laczniki-plaskie/grupa/na/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text NA
+            .icon
+              img(src='/img/dmx/csm_NA_2987c150dd.png', width='80', height='65', alt='')
+        .right.elem.p13(data-element='13')
+          a(href='/ru/produkty/ru/kategoria/zawiasy/grupa/c/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text C
+            .icon
+              img(src='/img/dmx/csm_C_3d630b7f97.png', width='80', height='65', alt='')
+        .right.elem.p10(data-element='10')
+          a(href='/ru/produkty/ru/kategoria/zasuwy/grupa/wro/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-line.third-line.vertical-line
+                    .yellow-line.fourth-line.rotate.rotate-45
+                      .yellow-circle
+            .text WRO
+            .icon
+              img(src='/img/dmx/csm_WRO_a8444d3024.png', width='80', height='65', alt='')
+        .right.elem.p12(data-element='12')
+          a(href='/ru/produkty/ru/kategoria/zawiasy/grupa/zn/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text ZN
+            .icon
+              img(src='/img/dmx/csm_ZN_10df873a82.png', width='80', height='65', alt='')
+        .right.elem.p9(data-element='9')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/psp-dx/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-line.third-line.vertical-line
+                    .yellow-circle
+            .text PSP DX
+            .icon
+              img(src='/img/dmx/csm_PSPDX_1f1017bfd9.png', width='80', height='65', alt='')
+        .right.elem.p8(data-element='8')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/ps/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-line.third-line.vertical-line
+                    .yellow-circle
+            .text PS
+            .icon
+              img(src='/img/dmx/csm_PS_4b361e91b3.png', width='80', height='65', alt='')
+      .garage
+        img(width='800', alt='', src='/img/dmx/garage.jpg')
+        .elem.p14(data-element='14')
+          a(href='/ru/produkty/ru/kategoria/laczniki-specjalne/grupa/lk/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_LK_9710d9d1b0.png', width='80', height='65', alt='')
+            .text LK
+        .elem.p13(data-element='13')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/klr/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_KLR_ba98f66855.png', width='80', height='65', alt='')
+            .text KLR
+        .elem.p12(data-element='12')
+          a(href='/ru/produkty/ru/kategoria/wieszaki-belek/grupa/wl/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_WL_2031e1b44c.png', width='80', height='65', alt='')
+            .text WL
+        .elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/psp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_PSP_2e26355abc.png', width='80', height='65', alt='')
+            .text PSP
+        .elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/podstawy-slupa/grupa/ps/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_PS_4b361e91b3.png', width='80', height='65', alt='')
+            .text PS
+        .elem.p7(data-element='7')
+          a(href='/ru/produkty/ru/kategoria/zawiasy/grupa/zn/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_ZN_10df873a82.png', width='80', height='65', alt='')
+            .text ZN
+        .right.elem.p11(data-element='11')
+          a(href='/ru/produkty/ru/kategoria/katowniki/grupa/kp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text KP
+            .icon
+              img(src='/img/dmx/csm_KP_3b8a09206f.png', width='80', height='65', alt='')
+        .right.elem.p15(data-element='15')
+          a(href='/ru/produkty/ru/kategoria/wkrety-ciesielskie-gwozdzie/grupa/ct/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text CT
+            .icon
+              img(src='/img/dmx/csm_CT_dcac289207.png', width='80', height='65', alt='')
+        .right.elem.p10(data-element='10')
+          a(href='/ru/produkty/ru/kategoria/laczniki-plaskie/grupa/pp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text PP
+            .icon
+              img(src='/img/dmx/csm_PP_fa60f19c19.png', width='80', height='65', alt='')
+        .right.elem.p8(data-element='8')
+          a(href='/ru/produkty/ru/kategoria/zawiasy/grupa/c/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text C
+            .icon
+              img(src='/img/dmx/csm_C_3d630b7f97.png', width='80', height='65', alt='')
+        .right.elem.p9(data-element='9')
+          a(href='/ru/produkty/ru/kategoria/zasuwy/grupa/wro/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text WRO
+            .icon
+              img(src='/img/dmx/csm_WRO_a8444d3024.png', width='80', height='65', alt='')
+      .wicket-with-gate
+        img(width='800', alt='', src='/img/dmx/wicket_with_gate.jpg')
+        .elem.p1(data-element='1')
+          a(href='/ru/produkty/ru/kategoria/zawiasy/grupa/ztd/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_ZTD_424fa0462b.png', width='80', height='65', alt='')
+            .text ZTD
+        .elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/zasuwy/grupa/wog/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_WOG_450ae53cfc.png', width='80', height='65', alt='')
+            .text WOG
+        .right.elem.p3(data-element='3')
+          a(href='/ru/produkty/ru/kategoria/zawiasy/grupa/zbd/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text ZBD
+            .icon
+              img(src='/img/dmx/csm_ZBD_57dd362eba.png', width='80', height='65', alt='')
+        .right.elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/zasuwy/grupa/wcz/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text WCZ
+            .icon
+              img(src='/img/dmx/csm_WCZ_d3382c61ca.png', width='80', height='65', alt='')
+        .right.elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/laczniki-plaskie/grupa/nad/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text NAD
+            .icon
+              img(src='/img/dmx/csm_NAD_ae06c5c90f.png', width='80', height='65', alt='')
+      .carport
+        img(width='800', alt='', src='/img/dmx/carport.jpg')
+        .elem.p2(data-element='2')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdslp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-225
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDSLP_73b4a01b7d.png', width='80', height='65', alt='')
+            .text SDSLP
+        .right.elem.p3(data-element='3')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text SDP
+            .icon
+              img(src='/img/dmx/csm_SDP_A_d9d358ce54.png', width='80', height='65', alt='')
+        .elem.p4(data-element='4')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdsp/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDSP_A_767f0c2fb8.png', width='80', height='65', alt='')
+            .text SDSP
+        .right.elem.p5(data-element='5')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdlpb/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-135
+                  .yellow-circle
+            .text SDLPB
+            .icon
+              img(src='/img/dmx/csm_SDLPB_4e1f75498e.png', width='80', height='65', alt='')
+        .elem.p6(data-element='6')
+          a(href='/ru/produkty/ru/kategoria/okucia-ogrodowe/grupa/ud/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_UD_1530202a11.png', width='80', height='65', alt='')
+            .text UD
+        .right.elem.p7(data-element='7')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdlpa/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-circle
+            .text SDLPA
+            .icon
+              img(src='/img/dmx/csm_SDLPA_871c77961b.png', width='80', height='65', alt='')
+        .right.elem.p8(data-element='8')
+          a(href='/ru/produkty/ru/kategoria/zawiasy/grupa/zbd/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text ZBD
+            .icon
+              img(src='/img/dmx/csm_ZBD_57dd362eba.png', width='80', height='65', alt='')
+        .right.elem.p9(data-element='9')
+          a(href='/ru/produkty/ru/kategoria/zasuwy/grupa/wcz/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-45
+                  .yellow-circle
+            .text WCZ
+            .icon
+              img(src='/img/dmx/csm_WCZ_d3382c61ca.png', width='80', height='65', alt='')
+        .elem.p10(data-element='10')
+          a(href='/ru/produkty/ru/kategoria/laczniki-ozdobne/grupa/sdklr/')
+            .pointer
+              .yellow-line.first-line.vertical-line
+                .yellow-line.second-line.rotate.rotate-315
+                  .yellow-circle
+            .icon
+              img(src='/img/dmx/csm_SDKLR_60f11d3ba7.png', width='80', height='65', alt='')
+            .text SDKLR
+  .prev-button.button.yellow Poprzedni widok
+  .active_space
+    .mainimg_slide
+      span.return ВОЗВРАТ
+      img.img-responsive(alt='', src='/img/dmx/main_button.jpg')
+    .house_slide(data-details='.house')
+    .gazebo_slide(data-details='.gazebo')
+    .terrace_slide(data-details='.terrace')
+    .pergola_slide(data-details='.pergola')
+    .children-house_slide(data-details='.children-house')
+    .sandpit_slide(data-details='.sandpit')
+    .bridge_slide(data-details='.bridge')
+    .swing_slide(data-details='.swing')
+    .woodshed_slide(data-details='.woodshed')
+    .garage_slide(data-details='.garage')
+    .wicket-with-gate_slide(data-details='.wicket-with-gate')
+    .carport_slide(data-details='.carport')

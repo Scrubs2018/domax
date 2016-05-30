@@ -1,0 +1,150 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title electric
+		include inc/head
+	body(class="p-electric")
+		include partials/header
+		
+		.b-container
+			+b('').slider.owl-carousel
+				+e('').slide
+					+e('img')(src="img/tree.jpg" alt="").img
+					+e('').layout
+						+e('').layout-wrap
+							+b('span').title.small Новинка в Минске!<br>Система декоративных<br>креплений SD DMX!
+							p Изготовлены из толстой оцинкованной стали с порошковым покрытием.<br>Это новые проекты конструкционных соединительных элементов!
+							+b('a')(href="#").btn Узнать подробности
+				+e('').slide
+					+e('img')(src="img/tree.jpg" alt="").img
+					+e('').layout
+						+e('').layout-wrap
+							+b('span').title.small Новинка в Минске!<br>Система декоративных<br>креплений SD DMX!
+							p Изготовлены из толстой оцинкованной стали с порошковым покрытием.<br>Это новые проекты конструкционных соединительных элементов!
+							+b('a')(href="#").btn Узнать подробности
+				+e('').slide
+					+e('img')(src="img/tree.jpg" alt="").img
+					+e('').layout
+						+e('').layout-wrap
+							+b('span').title.small Новинка в Минске!<br>Система декоративных<br>креплений SD DMX!
+							p Изготовлены из толстой оцинкованной стали с порошковым покрытием.<br>Это новые проекты конструкционных соединительных элементов!
+							+b('a')(href="#").btn Узнать подробности
+		+b('section').fasteners
+			.b-container
+				+e('').wrap
+					+b('').selection
+						+b('span').title.center Крепежи и крепления в Минске
+						+e('').menu-select
+							+e('a')(href="#").item
+								+e('img')(src="http://placehold.it/238x150" alt="").img
+								+e('span').text Все товары
+							+e('a')(href="#").item
+								+e('img')(src="http://placehold.it/238x150" alt="").img
+								+e('span').text Перфорированный крепеж
+							+e('a')(href="#").item
+								+e('img')(src="http://placehold.it/238x150" alt="").img
+								+e('span').text Все товары
+							+e('a')(href="#").item
+								+e('img')(src="http://placehold.it/238x150" alt="").img
+								+e('span').text Все товары
+							+e('a')(href="#").item
+								+e('img')(src="http://placehold.it/238x150" alt="").img
+								+e('span').text Все товары
+						+e('').select
+							+b('select').select
+								+e('option').option Перфорированный крепеж
+								+e('option').option Перфорированный
+					+b('').all-product
+						+e('').wrap
+							+e('').menu-product.left
+								+e('a')(href="#").item.active Все товары
+								+e('a')(href="#").item Перфорированный крепеж
+								+e('a')(href="#").item Петли
+								+e('a')(href="#").item Шурупы
+								+e('a')(href="#").item Задвижки
+							+e('').right
+								+e('span')(id="click").title Подобрать по цвету
+								+e('')(id="close").select-wrap
+									+e('a')(href="#").select-item
+										+e('img')(src="http://placehold.it/30x30").img
+										+e('span').value Светлоголубой
+									+e('a')(href="#").select-item
+										+e('img')(src="http://placehold.it/30x30").img
+										+e('span').value Светлоголубой
+									+e('a')(href="#").select-item
+										+e('img')(src="http://placehold.it/30x30").img
+										+e('span').value Дуб
+									+e('a')(href="#").select-item
+										+e('img')(src="http://placehold.it/30x30").img
+										+e('span').value Дуб
+									+e('a')(href="#").select-item
+										+e('img')(src="http://placehold.it/30x30").img
+										+e('span').value Светлоголубой
+						+e('').cols-wrap
+							+e('').col
+								+e('').col-wrap
+									+product
+									+product-a
+							+e('').col
+								+product
+								+product-a
+							+e('').col
+								+product
+								+product-a
+							+e('').col
+								+product
+								+product-a
+							+e('').col
+								+product
+								+product-a
+							+e('').col
+								+product
+								+product-a
+							+e('').col
+								+product
+								+product-a
+							+e('').col
+								+product
+								+product-a
+							+e('').col
+								+product
+								+product-a
+							+e('').col
+								+product
+								+product-a
+					+b('').pagination
+						+e('').wrap
+							+e('').left
+								+e('a')(href="#").item._prev Назад
+							+e('').middle
+								+e('a')(href="#").item 1
+								+e('a')(href="#").item ...
+								+e('a')(href="#").item 6
+								+e('a')(href="#").item 7
+								+e('a')(href="#").item.active 8
+								+e('a')(href="#").item 9
+								+e('a')(href="#").item ...
+								+e('a')(href="#").item 30
+							+e('').mobile
+								+e('a')(href="#").item 1
+								+e('a')(href="#").item.active 2
+								+e('a')(href="#").item 3
+							+e('').right
+								+e('a')(href="#").item._next Вперед
+					+e('').text-wrap
+						+e('').text.tabs
+							p Если вам предстоит заниматься фиксацией конструкций разной степени сложности, то без надёжных метизов сложно будет обойтись. К их выбору и покупке следует подходить осознанно, так как от качества изделий зависит долговечность готовой конструкции. Советуем вам погружаться в мир крепёжных изделий вместе с компанией «ВиСМа-строй».
+							p Изделия для крепежа представляют собой металлические детали, которые необходимы для различного рода соединений: разъёмных либо неразъёмных. Первые выполняются, как правило, с использованием винтов, болтов, гаек либо шпилек, а вторые - с применением пайки, сварки либо склеивания.На страницах нашего сайта вы сможете ознакомиться с различными крепежами, здесь представлены как универсальные модели, так и специализированные метизы.
+							p Это и дюбель гвозди, и саморезы, и шурупы, и гайки, и болты, и т.д. В зависимости от целей и перечня работ, который предстоит выполнить, нужно выбирать различные крепёжные изделия. Для установки плинтуса и крепления деревянных конструкций можно применять гвозди. Заклёпка больше подойдёт для металлических листов либо гипсокартона. Она используется в тандеме со специальным аппаратом для установки. При установке оконных пакетов стоит выбирать дюбели.С помощью штифта, который представляет собой крепежный безрезьбовой элемент, можно соединять детали конструкций в неподвижном состоянии. Когда важно сохранить эстетическую красоту наружной стороны здания, то идеальным решением станут шурупы. Их цветовая палитра достигает 18 цветов, что говорит о привлекательности данного крепежа. Многие модели шурупов используются при фасадных и кровельных работах, а также скреплении металлических листов.
+						+b('').button.tab Полное описание
+						+e('img')(src="http://placehold.it/350x350", alt="").img
+
+
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

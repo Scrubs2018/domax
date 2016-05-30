@@ -1,0 +1,38 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title contact
+		include inc/head
+	body(class="p-contact")
+		include partials/header
+
+		+b('section').contact
+			.b-container
+				+e('').wrap
+					+e('').contact-wrap
+						+b('span').title Наши контакты
+						+e('').left
+							+e('').row.phone
+								+e('span').item +375 (17) 392-78-93
+								+e('span').item +375 (17) 392-78-93
+								+e('span').item +375 (17) 392-78-93
+								+e('span').item +375 (17) 392-78-93
+							+e('a')(href="#").row.email info@domax.by
+							+e('address').row.address 220131, г. Минск, ул. Гало, 148/1, оф. 1
+						+e('').right
+							+e('span').item-a Общество с ограниченной ответственностью «Домакс Систем»
+							+e('span').item-a УНП: 191926297
+							+e('span').item-a Р/с: 3012159210015 в ЦБУ № 702
+							+e('span').item-a ОАО "БПС-Сбербанк" МФО: 153001369
+							+e('span').item-a Адрес банка: г. Минск, ул. Сурганова, 39
+					+b('').map
+						#map
+
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

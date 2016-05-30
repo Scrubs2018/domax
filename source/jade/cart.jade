@@ -1,0 +1,106 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title cart
+		include inc/head
+	body(class="p-cart")
+		include partials/header
+
+		+b('section').cart
+			.b-container
+				+e('').wrap
+					+e('').cart-wrap
+						+b('span').title Ваш заказ
+						+e('table').table
+							+e('tr').tr-a
+								+e('th').image
+								+e('th').name-product Наменование товара
+								+e('th').number
+								+e('th').quantity Количество
+								+e('th').price Цена
+								+e('th').delete
+							+e('tr').tr
+								+e('td').image
+									+e('a')(href="#").link
+										+e('img')(src="http://placehold.it/70x70").img
+								+e('td').name-product
+									+e('a')(href="#").link Рамка, 1 место, Хамелеон Песчаный/ Слоновая кость
+								+e('td').number 10 шт.
+								+e('td').quantity
+									+b('').number
+										+e('span').less
+										+e('input')(type="text" placeholder="1").input
+										+e('span').more
+								+e('td').price 125 000 руб
+								+e('td').delete
+									+b('').delete
+							+e('tr').tr
+								+e('td').image
+									+e('a')(href="#").link
+										+e('img')(src="http://placehold.it/70x70").img
+								+e('td').name-product
+									+e('a')(href="#").link Рамка, 1 место, Хамелеон Песчаный/ Слоновая кость
+								+e('td').number 10 шт.
+								+e('td').quantity
+									+b('').number
+										+e('span').less
+										+e('input')(type="text" placeholder="1").input
+										+e('span').more
+								+e('td').price 125 000 руб
+								+e('td').delete
+									+b('').delete
+							+e('tr').tr
+								+e('td').image
+									+e('a')(href="#").link
+										+e('img')(src="http://placehold.it/70x70").img
+								+e('td').name-product
+									+e('a')(href="#").link Рамка, 1 место, Хамелеон Песчаный/ Слоновая кость
+								+e('td').number 10 шт.
+								+e('td').quantity
+									+b('').number
+										+e('span').less
+										+e('input')(type="text" placeholder="1").input
+										+e('span').more
+								+e('td').price 125 000 руб
+								+e('td').delete
+									+b('').delete
+						+e('').cart-mobile
+							+e('').row
+								+e('').top
+									+e('a')(href="#").left KM 1 - уголок монтажный, усиленный
+									+e('').right
+										+b('').delete
+								+e('').bottom
+									+e('').left
+										+b('').number
+											+e('span').less
+											+e('input')(type="text" placeholder="1").input
+											+e('span').more
+									+e('span').right 120 000 руб
+							+e('').row
+								+e('').top
+									+e('a')(href="#").left KM 1 - уголок монтажный, усиленный
+									+e('').right
+										+b('').delete
+								+e('').bottom
+									+e('').left
+										+b('').number
+											+e('span').less
+											+e('input')(type="text" placeholder="1").input
+											+e('span').more
+									+e('span').right 120 000 руб
+						+e('').order-wrap
+							+e('span').total Итого: <span>240 000 руб</span>
+							+e('').btn-wrap
+								+b('a')(href="#").btn Оформить заказ
+						
+							
+
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

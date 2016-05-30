@@ -1,0 +1,23 @@
+{
+  "name": "blank-project-website",
+  "description": "",
+  "main": "index.js",
+  "license": "BSD-2-Clause",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.12.0",
+    "normalize": "./source/stylus/vendor-css/normalize.css",
+    "js-helpers": "https://github.com/aivenreach/js-helpers.git",
+    "owl.carousel": "owl-carousel2#^2.0.0-beta.3",
+    "jquery.im-sbox": "./source/_scripts/jquery.im-sbox.js",
+    "fancybox": "^2.1.5"
+  }
+}

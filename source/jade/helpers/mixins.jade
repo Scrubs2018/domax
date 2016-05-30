@@ -1,0 +1,52 @@
+mixin product
+	+b('a')(href="#").product.calc
+		+e('').image
+			+e('img')(src="http://placehold.it/190x180" alt="").img
+		+e('').wrap
+			+e('span').view sdlpc<span>, Крепление плоское</span>
+			+e('span').title Крепление плоское
+			+e('span').price 75 500 руб. за 10 шт.
+
+mixin product-a
+	+b('').product-hover
+		+e('a')(href="#").image
+			+e('img')(src="http://placehold.it/190x180" alt="").img
+		+e('').content-wrap
+			+e('span').title.open Крепление плоское
+			+e('').color
+				+e('').col
+					+b('label').radio
+						+e('input')(type="radio" name="color").native
+						+e('img')(src="http://placehold.it/30x30").custom
+				+e('').col
+					+b('label').radio
+						+e('input')(type="radio" name="color").native
+						+e('img')(src="http://placehold.it/30x30").custom
+				+e('').col
+					+b('label').radio
+						+e('input')(type="radio" name="color").native
+						+e('img')(src="http://placehold.it/30x30").custom
+				+e('').col
+					+b('label').radio
+						+e('input')(type="radio" name="color").native
+						+e('img')(src="http://placehold.it/30x30").custom
+				+e('').col
+					+b('label').radio
+						+e('input')(type="radio" name="color").native
+						+e('img')(src="http://placehold.it/30x30").custom
+			+e('span').price 75 500 руб. за 10 шт.
+			+e('').buy-wrap
+				+e('').left
+					+b('').number
+						+e('span').less
+						+e('input')(type="text" placeholder="1").input
+						+e('span').more
+				+e('a')(href="#").right
+
+mixin product-item
+	+b('a')(href="#").product
+		+e('').image
+			+e('img')(src="http://placehold.it/190x180" alt="").img
+		+e('').content-wrap
+			+e('span').title.open Крепление плоское
+			+e('span').price 75 500 руб. за 10 шт.
